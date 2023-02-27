@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR Code Reader</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./node_modules/html5-qrcode/html5-qrcode.min.js"></script>
+  </head>
+  <body>
+    <div id="reader-container">
+      <div id="reader">
+        <video id="video-preview" autoplay="autoplay" muted="muted" playsinline="playsinline" autofocus="autofocus"></video>
+      </div>
+      <button id="close-scanner" class="close-scanner" onclick="closeScanner()">Close Scanner</button>
+    </div>
+    <div class="wrapper" id="registration-form-container">
+      <h1>Sign Up</h1>
+      <form action="#">
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+
+        <input type="text" id="surname" name="surname" placeholder="Surname" required><br><br>
+
+        <input type = "password" id="passwords" name="passwords" value ="Password" placeholder="Password" required onclick="passwords();" /><br><br>
+
+        <input type="text" id="address" name="address" placeholder="Address" required><br><br>
+
+        <input type="text" class="device-address-style" id="device-address" placeholder="Enter device address">
+
+        <button id="scan-button" class="scan-button" onclick="requestCameraPermissions()">Scan</button>
+
+        <input type="email" id="email" name="email" placeholder="E-Mail" required><br><br>
+
+        <input type="tel" id="phone" name="phone" placeholder="Phone" required><br><br>
+
+        <input type="submit" class="submit-button" value="Submit">
+      </form>
+    </div>
+ <script src="app.js"></script>
+  </body>
+</html>
+
