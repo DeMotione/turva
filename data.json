@@ -1,4 +1,10 @@
 {
+    "Vk": {
+    "errortype": "status_code",
+    "url": "https://vk.com/{}",
+    "urlMain": "https://vk.com/",
+    "username_claimed": "blue"
+  },
   "2Dimensions": {
     "errorType": "status_code",
     "url": "https://2Dimensions.com/a/{}",
